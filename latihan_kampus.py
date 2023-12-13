@@ -39,3 +39,26 @@ print((-2 / 4), (2 / 4), (2 // 4), (-2 // 4))
 # Exercise 3
 print((2 % -4), (2 % 4), (2 ** 3 ** 2))
 
+# Exercise 1 (Variables)
+var = 2
+var = 3
+print(var)
+
+# Exercise 2
+# Variables yang illegal pada Python ialah : 101, m 101
+my_var = 0
+m = 1
+averylongvariablename = 2
+m101 = 3
+Del = 4
+
+# Exercise 3
+a = '1'
+b = "1"
+print(a + b)
+
+# Exercise 4
+a = 6
+b = 3
+a /= 2 * b
+print(a)
