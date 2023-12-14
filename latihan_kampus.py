@@ -215,4 +215,33 @@ f = x << 2 # Bitwise left shift
 
 print(a, b, c, d, e, f)
 
+# Exercise 1
+lst = [1, 2, 3, 4, 5]
+lst.insert(1, 6)
+del lst[0]
+lst.append(1)
+print(lst)
+
+# Exercise 2
+lst = [1, 2, 3, 4, 5]
+lst_2 = []
+add = 0
+
+for number in lst:
+    add += number
+    lst_2.append(add)
+
+print(lst_2)
+
+# Exercise 3
+lst = []
+del lst
+# print(lst)  # Uncomment this line to see the NameError
+print("Jika ingin melihat NameError yang bagian printnya di uncomment dulu")
+
+# Exercise 4
+lst = [1, [2, 3], 4]
+print(lst[1])
+print(len(lst))
+
 
