@@ -4,6 +4,8 @@ Nim = "42523011"
 print("Nama :", Nama)
 print("Kelas :", Kelas)
 print("Nim :", Nim)
+
+print("Python Literal")
 # Exercise 1 (Python Literal)
 # Apa tipe-tipe literal dari contoh berikut ini:
 # "Hello ", "007"
@@ -45,6 +47,7 @@ print((-2 / 4), (2 / 4), (2 // 4), (-2 // 4))
 # Exercise 3
 print((2 % -4), (2 % 4), (2 ** 3 ** 2))
 
+print("Variables")
 # Exercise 1 (Variables)
 var = 2
 var = 3
@@ -69,6 +72,7 @@ b = 3
 a /= 2 * b
 print(a)
 
+print("Comments")
 # Exercise 1 (Comments): Output of the following snippet
 # print("String #1")
 print("String #2")
@@ -85,6 +89,7 @@ print(x * "5")
 x = input("Enter a number: ")  # The user enters 2
 print(type(x))
 
+print("Comparison Operators and Conditional Execution")
 # Exercise 1 (Comparison Oprators and Conditional Executions)
 x = 5
 y = 10
@@ -149,6 +154,8 @@ elif x == y:
 else:
     print("four")
 
+
+print("Loop")
 # Exercise 1 (Loop): For loop printing odd numbers from 0 to 10
 for i in range(1, 11):
     if i % 2 != 0:
@@ -195,6 +202,7 @@ else:
 for i in range(0, 6, 3):
     print(i)
 
+print("Logic and Bit Operation")
 # Exercise 1 (Logic and Bit Operation): Logical operators and output
 x = 1
 y = 0
@@ -215,7 +223,8 @@ f = x << 2 # Bitwise left shift
 
 print(a, b, c, d, e, f)
 
-# Exercise 1
+print("List")
+# Exercise 1 (List)
 lst = [1, 2, 3, 4, 5]
 lst.insert(1, 6)
 del lst[0]
@@ -244,4 +253,28 @@ lst = [1, [2, 3], 4]
 print(lst[1])
 print(len(lst))
 
+print("Sorting Simple lists")
+# Exercise 1 (Sorting Simple lists)
+lst = ["D", "F", "A", "Z"]
+lst.sort()
+print(lst)
+
+# Exercise 2
+a = 3
+b = 1
+c = 2
+
+lst = [a, c, b]
+lst.sort()
+print(lst)
+
+# Exercise 3
+a = "A"
+b = "B"
+c = "C"
+d = " "
+
+lst = [a, b, c, d]
+lst.reverse()
+print(lst)
 
