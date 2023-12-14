@@ -1,3 +1,9 @@
+Nama = "Raditya Mulya Akbar"
+Kelas = "1-A TKJ"
+Nim = "42523011"
+print("Nama :", Nama)
+print("Kelas :", Kelas)
+print("Nim :", Nim)
 # Exercise 1 (Python Literal)
 # Apa tipe-tipe literal dari contoh berikut ini:
 # "Hello ", "007"
@@ -188,3 +194,25 @@ else:
 # Exercise 7: Output of the for loop
 for i in range(0, 6, 3):
     print(i)
+
+# Exercise 1 (Logic and Bit Operation): Logical operators and output
+x = 1
+y = 0
+
+z = ((x == y) and (x == y)) or not(x == y)
+print(not(z))
+
+# Exercise 2: Bitwise operators and their outputs
+x = 4
+y = 1
+
+a = x & y  # Bitwise AND
+b = x | y  # Bitwise OR
+c = ~x     # Bitwise NOT (Complement)
+d = x ^ 5  # Bitwise XOR
+e = x >> 2 # Bitwise right shift
+f = x << 2 # Bitwise left shift
+
+print(a, b, c, d, e, f)
+
+
