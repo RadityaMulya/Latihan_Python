@@ -575,7 +575,7 @@ print(a * b * c)  # Output: 6
 
 # Exercise 3
 tup = 1, 2, 3, 2, 4, 5, 6, 2, 7, 2, 8, 9
-duplicates = tup.count(2)
+duplicates = tup.count(3)
 print(duplicates)  # Output: 4
 
 # Exercise 4
