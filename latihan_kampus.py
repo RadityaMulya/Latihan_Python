@@ -385,4 +385,39 @@ def hi():
 
 # hi(5)  # Uncommenting this akan menimbulkan error sama seperti exercise 2
 
+print("Function Parameter and argument passing")
+# Exercise 1
+def intro(a="James Bond", b="Bond"):
+    print("My name is", b + ".", a + ".")
+
+intro()
+# Output: My name is Bond. James Bond.
+
+# Exercise 2
+def intro(a="James Bond", b="Bond"):
+    print("My name is", b + ".", a + ".")
+
+intro(b="Sean Connery")
+# Output: My name is Sean Connery. James Bond.
+
+# Exercise 3
+def intro(a, b="Bond"):
+    print("My name is", b + ".", a + ".")
+
+intro("Susan")
+# Output: My name is Bond. Susan.
+
+# Exercise 4
+# def add_numbers(a, b=2, c):
+#     print(a + b + c)
+# add_numbers(a=1, c=3)
+# kode tersebut akan menyebabkan kesalahan sintaks karena parameter tanpa nilai default (c) diletakkan setelah parameter dengan nilai default (b=2). 
+# Dalam Python, parameter tanpa nilai default harus diletakkan terakhir dalam daftar parameter fungsi. 
+# Kode tersebut akan menghasilkan kesalahan sintaks dan tidak dapat dijalankan. 
+
+# Jadi solvenya seperti ini
+def add_numbers(a, c, b=2):
+    print(a + b + c)
+add_numbers(a=1, c=3)
+
 
