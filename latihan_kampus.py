@@ -62,3 +62,21 @@ a = 6
 b = 3
 a /= 2 * b
 print(a)
+
+# Exercise 1 (Comments): Output of the following snippet
+# print("String #1")
+print("String #2")
+
+# Exercise 2: What will happen when you run the following code?
+# This is a multiline comment. #
+print("Hello!")
+
+# Exercise 1 (The input() function and String Operators): Output of the following snippet
+x = int(input("Enter a number: "))  # The user enters 2
+print(x * "5")
+
+# Exercise 2: Expected output of the following snippet
+x = input("Enter a number: ")  # The user enters 2
+print(type(x))
+
+
