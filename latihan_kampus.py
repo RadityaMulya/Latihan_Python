@@ -529,4 +529,111 @@ print(a)
 # 2
 # 2
 
+print("Creating Simple functions")
+# Exercise 1
+def factorial(n):
+    return n * factorial(n - 1)
+
+# This code will result in a RecursionError. The factorial function doesn't have a base case to stop the recursive calls.
+# print(factorial(4))
+# jadi untuk solvenya ialah seperti berikut
+# perlu menambahkan kondisi dasar atau base case yang akan menghentikan rekursi. 
+# Dalam kasus ini, base case adalah saat n sama dengan 0 atau 1, karena nilai faktorial dari 0 atau 1 adalah 1.
+# jadi baris codenya seperti dibawah ini
+
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+print(factorial(4))
+# Output: 24
+# Dengan menambahkan kondisi dasar if n == 0 or n == 1: return 1, 
+# rekursi akan berhenti saat nilai n sama dengan 0 atau 1 
+# dan ini akan menghitung faktorial dengan benar untuk nilai n yang valid seperti 4 menjadi 24.
+
+# Exercise 2
+def fun(a):
+    if a > 30:
+        return 3
+    else:
+        return a + fun(a + 3)
+
+print(fun(25))
+# Output: 29
+
+print("Tuples and Dictionaries")
+# Exercise 1
+my_tup = (1, 2, 3)
+print(my_tup[2])  # Output: 3
+
+# Exercise 2
+tup = 1, 2, 3
+a, b, c = tup
+print(a * b * c)  # Output: 6
+
+# Exercise 3
+tup = 1, 2, 3, 2, 4, 5, 6, 2, 7, 2, 8, 9
+duplicates = tup.count(2)
+print(duplicates)  # Output: 4
+
+# Exercise 4
+d1 = {'Adam Smith': 'A', 'Judy Paxton': 'B+'}
+d2 = {'Mary Louis': 'A', 'Patrick White': 'C'}
+d3 = {}
+
+for item in (d1, d2):
+    d3.update(item)
+
+print(d3)
+
+# Exercise 5
+my_list = ["car", "Ford", "flower", "Tulip"]
+t = tuple(my_list)
+print(t)
+
+# Exercise 6
+colors = (("green", "#008000"), ("blue", "#0000FF"))
+colors_dictionary = dict(colors)
+print(colors_dictionary)
+
+# Exercise 7
+my_dictionary = {"A": 1, "B": 2}
+copy_my_dictionary = my_dictionary.copy()
+my_dictionary.clear()
+print(copy_my_dictionary)
+
+# Exercise 8
+colors = {
+    "white": (255, 255, 255),
+    "grey": (128, 128, 128),
+    "red": (255, 0, 0),
+    "green": (0, 128, 0)
+}
+
+for col, rgb in colors.items():
+    print(col, ":", rgb)
+
+
+try:
+    value = int(input("Enter a value: "))
+    print(value / value)
+except ValueError:
+    print("Bad input...")
+except ZeroDivisionError:
+    print("Very bad input...")
+except:
+    print("Booo!")  # Menangkap kesalahan umum atau tidak terduga
+
+print("Execption")
+try:
+    value = int(input("Enter a value: "))
+    print(value / value)
+except ValueError:
+    print("Bad input...")
+except ZeroDivisionError:
+    print("Very bad input...")
+except:
+    print("Booo!")  # Menangkap kesalahan umum atau tidak terduga
 
