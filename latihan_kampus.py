@@ -143,3 +143,48 @@ elif x == y:
 else:
     print("four")
 
+# Exercise 1 (Loop): For loop printing odd numbers from 0 to 10
+for i in range(1, 11):
+    if i % 2 != 0:
+        print(i)
+
+# Exercise 2: While loop printing odd numbers from 0 to 10
+x = 1
+while x < 11:
+    if x % 2 != 0:
+        print(x)
+    x += 1
+
+# Exercise 3: For loop with a break statement to extract part of an email address
+email = "john.smith@pythoninstitute.org"
+for ch in email:
+    if ch == "@":
+        break
+    print(ch, end="")
+
+# Exercise 4: For loop with a continue statement to modify a string
+digits = "0165031806510"
+for digit in digits:
+    if digit == "0":
+        print("x", end="")
+        continue
+    print(digit, end="")
+
+# Exercise 5: Output of the while loop
+n = 3
+while n > 0:
+    print(n + 1)
+    n -= 1
+else:
+    print(n)
+
+# Exercise 6: Output of the for loop
+n = range(4)
+for num in n:
+    print(num - 1)
+else:
+    print(num)
+
+# Exercise 7: Output of the for loop
+for i in range(0, 6, 3):
+    print(i)
