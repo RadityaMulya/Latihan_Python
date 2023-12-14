@@ -278,3 +278,111 @@ lst = [a, b, c, d]
 lst.reverse()
 print(lst)
 
+print("List Processing")
+# Exercise 1 (List Processing)
+list_1 = ["A", "B", "C"]
+list_2 = list_1
+list_3 = list_2
+
+del list_1[0]
+del list_2[0]
+
+print(list_3)  # Output: ['B', 'C']
+
+# Exercise 2
+list_1 = ["A", "B", "C"]
+list_2 = list_1
+list_3 = list_2
+
+del list_1[0]
+del list_2
+
+print(list_3)  # Output: ['B', 'C']
+
+# Exercise 3
+list_1 = ["A", "B", "C"]
+list_2 = list_1
+list_3 = list_2
+
+del list_1[0]
+del list_2[:]
+
+print(list_3)  # Output: []
+
+# Exercise 4
+list_1 = ["A", "B", "C"]
+list_2 = list_1[:]
+list_3 = list_2[:]
+
+del list_1[0]
+del list_2[0]
+
+print(list_3)  # Output: ['A', 'B', 'C']
+
+# Exercise 5
+my_list = [1, 2, "in", True, "ABC"]
+
+print(1 in my_list)       # outputs True
+print("A" in my_list)     # outputs True
+print(3 not in my_list)   # outputs True
+print(False in my_list)   # outputs False
+
+print("Array Multidimensional")
+
+# Array 2D untuk menyimpan nilai siswa (3 siswa, 3 mata pelajaran)
+nilai_siswa = [
+    [75, 80, 85],  # Nilai siswa 1: Matematika, Bahasa Inggris, IPA
+    [60, 70, 75],  # Nilai siswa 2: Matematika, Bahasa Inggris, IPA
+    [90, 85, 95]   # Nilai siswa 3: Matematika, Bahasa Inggris, IPA
+]
+
+# Menampilkan nilai setiap siswa pada setiap mata pelajaran
+for i, nilai in enumerate(nilai_siswa, start=1):
+    print(f"Nilai Siswa {i}: {nilai}")
+
+# Menghitung rata-rata nilai setiap siswa
+for i, nilai in enumerate(nilai_siswa, start=1):
+    rata_rata = sum(nilai) / len(nilai)
+    print(f"Rata-rata nilai Siswa {i}: {rata_rata:.2f}")
+
+# Menghitung rata-rata nilai setiap mata pelajaran
+nilai_matematika = [siswa[0] for siswa in nilai_siswa]
+nilai_inggris = [siswa[1] for siswa in nilai_siswa]
+nilai_ipa = [siswa[2] for siswa in nilai_siswa]
+
+rata_matematika = sum(nilai_matematika) / len(nilai_matematika)
+rata_inggris = sum(nilai_inggris) / len(nilai_inggris)
+rata_ipa = sum(nilai_ipa) / len(nilai_ipa)
+
+print(f"Rata-rata nilai Matematika: {rata_matematika:.2f}")
+print(f"Rata-rata nilai Bahasa Inggris: {rata_inggris:.2f}")
+print(f"Rata-rata nilai IPA: {rata_ipa:.2f}")
+
+print("Function")
+# Exercise 1
+# The input() function is an example of a:
+# a) user-defined function
+# b) built-in function
+print("Exercise 1:")
+print("The input() function is an example of a")
+print("b) built-in function")
+
+# Exercise 2
+# What happens when you try to invoke a function before you define it?
+print("\nExercise 2:")
+# hi()  # Uncommenting this line will cause an error due to invoking the function before defining it jadi yang benar itu seperti dibawah
+
+def hi():
+    print("hi!")
+
+hi()
+
+# Exercise 3
+# What will happen when you run the code below?
+print("\nExercise 3:")
+def hi():
+    print("hi")
+
+# hi(5)  # Uncommenting this akan menimbulkan error sama seperti exercise 2
+
+
