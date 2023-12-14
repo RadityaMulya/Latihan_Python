@@ -420,4 +420,113 @@ def add_numbers(a, c, b=2):
     print(a + b + c)
 add_numbers(a=1, c=3)
 
+print("Retuning Results from Function")
+# Exercise 1
+def hi():
+    return
+    print("Hi!")
+
+hi()
+# Output: Tidak ada output yang dihasilkan karena pernyataan print() tidak tercapai.
+
+# Exercise 2
+def is_int(data):
+    if type(data) == int:
+        return True
+    elif type(data) == float:
+        return False
+
+print(is_int(5))
+# Output: True
+print(is_int(5.0))
+# Output: False
+print(is_int("5"))
+# Output: None (tidak ada return di kondisi else)
+
+# Exercise 3
+def even_num_lst(ran):
+    lst = []
+    for num in range(ran):
+        if num % 2 == 0:
+            lst.append(num)
+    return lst
+
+print(even_num_lst(11))
+# Output: [0, 2, 4, 6, 8, 10]
+
+# Exercise 4
+def list_updater(lst):
+    upd_list = []
+    for elem in lst:
+        elem **= 2
+        upd_list.append(elem)
+    return upd_list
+
+foo = [1, 2, 3, 4, 5]
+print(list_updater(foo))
+# Output: [1, 4, 9, 16, 25]
+
+# Exercise 1
+def message():
+    alt = 1
+    print("Hello, World!")
+
+# The code below will raise a NameError because `alt` is not defined in the global scope.
+# print(alt)
+# Jadi untuk solvenya ialah menambahkan pernyataan return di dalam fungsi message() dan menampung nilai yang dikembalikan oleh fungsi tersebut ke dalam variabel result, 
+# kita bisa dapat mencetak nilai alt yang ada di dalam fungsi message() di luar fungsi tersebut.
+# contohnya seperti dibawah
+
+def message():
+    alt = 1
+    print("Hello, World!")
+    return alt
+
+result = message()
+print(result)
+# Output: 1
+
+# Exercise 2
+a = 1
+
+def fun():
+    a = 2
+    print(a)
+
+fun()
+print(a)
+# Output: 
+# 2
+# 1
+
+# Exercise 3
+a = 1
+
+def fun():
+    global a
+    a = 2
+    print(a)
+
+fun()
+a = 3
+print(a)
+# Output: 
+# 2
+# 3
+
+# Exercise 4
+a = 1
+
+def fun():
+    global a
+    a = 2
+    print(a)
+
+a = 3
+fun()
+print(a)
+# Output: 
+# 2
+# 2
+
 
